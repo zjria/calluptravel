@@ -1,0 +1,213 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+section {
+  margin: 100px 0px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 99%;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.color-check {
+  color: #424247;
+}
+
+:root {
+  --primary-color: #ff5400;
+  --secondary-color: #424247;
+}
+
+/* 100 – Thin.
+ 200 – Extra Light (Ultra Light)
+300 – Light.
+400 – Normal.
+500 – Medium.
+600 – Semi Bold (Demi Bold)
+700 – Bold.
+800 – Extra Bold (Ultra Bold) */
+/* 
+h1 {
+  color: $raisinBlackColor;
+  font-family: $raleway-font;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+h2 {
+  color: $raisinBlackColor;
+  font-family: $raleway-font;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: $raleway-font;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+h3.tow {
+  font-family: $raleway-font;
+  color: $GainsboroColor;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: $raleway-font;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+h5 {
+  font-family: $raleway-font;
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+h6 {
+  font-family: $jost-font;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+p {
+  color: $primaryColor;
+  line-height: 24px;
+} */
+
+/* =======================header content=======================  */
+header {
+  margin-top: 2.5rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav button {
+  display: none;
+}
+
+nav label.checkbtn {
+  font-size: 1.5rem;
+}
+
+nav .brand-navLink ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+
+}
+
+nav .brand-navLink ul li a {
+  color: var(--secondary-color);
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  transition: 0.2s;
+
+}
+
+nav .brand-navLink ul li:hover a {
+  color: var(--primary-color);
+}
+
+nav .brand-navLink .brand {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+nav .navbar-brand {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.8125rem;
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
+}
+
+nav .navbar-brand span {
+  color: var(--primary-color);
+}
+
+nav .navbar-brand img {
+  width: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {}
