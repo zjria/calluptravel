@@ -129,17 +129,28 @@ nav .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 nav button {
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+nav button #check {
   display: none;
 }
 
-nav label.checkbtn {
+nav button label.checkbtn {
   font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
 }
 
-nav .brand-navLink ul {
+nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -147,7 +158,7 @@ nav .brand-navLink ul {
 
 }
 
-nav .brand-navLink ul li a {
+nav ul li a {
   color: var(--secondary-color);
   font-size: 1.125rem;
   line-height: 1.4375rem;
@@ -155,11 +166,11 @@ nav .brand-navLink ul li a {
 
 }
 
-nav .brand-navLink ul li:hover a {
+nav li:hover a {
   color: var(--primary-color);
 }
 
-nav .brand-navLink .brand {
+nav .brand {
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -172,7 +183,6 @@ nav .navbar-brand {
   line-height: 2.8125rem;
   align-items: center;
   display: flex;
-  column-gap: 10px;
 }
 
 nav .navbar-brand span {
@@ -180,29 +190,35 @@ nav .navbar-brand span {
 }
 
 nav .navbar-brand img {
-  width: 4rem;
+  width: 3.5rem;
+  margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
-@media screen and (min-width: 320px) and (max-width: 576px) {}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  nav button label.checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    background: slategrey;
+    position: fixed;
+    padding: 30px 0px;
+    width: 100vw;
+    left: -100%;
+    flex-direction: column;
+    margin-top: 25px;
+    row-gap: 20px;
+    transition: 0.5s all;
+  }
+
+  #check:checked~nav ul {
+    left: 0%;
+  }
+}
 
 @media screen and (min-width: 576px) and (max-width: 768px) {}
 
