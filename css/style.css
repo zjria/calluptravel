@@ -1,3 +1,4 @@
+/* default css start */
 *,
 ::after,
 ::before {
@@ -12,6 +13,8 @@ html {
 
 body {
   font-family: "Mulish", sans-serif;
+  margin-bottom: 500px;
+  padding-bottom: 500px;
 }
 
 section {
@@ -58,16 +61,6 @@ p {
   --heder-text-black: #131318;
 }
 
-/* 100 – Thin.
- 200 – Extra Light (Ultra Light)
-300 – Light.
-400 – Normal.
-500 – Medium.
-600 – Semi Bold (Demi Bold)
-700 – Bold.
-800 – Extra Bold (Ultra Bold) */
-
-
 h1 {
   color: var(--white-text-color);
   font-size: 4rem;
@@ -88,8 +81,6 @@ h3 {
   font-weight: 800;
   line-height: 2.5rem;
 }
-
-
 
 h4 {
   color: var(--white-text-color);
@@ -117,6 +108,23 @@ p {
   font-weight: 400;
   line-height: 1.625rem;
 }
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: var(--white-text-color);
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+
+/* default css end */
 
 /* ===========header content=============  */
 header {
@@ -255,7 +263,7 @@ nav .navbar-brand img {
 
 .input-field form input,
 .input-field form select,
-.input-field form .search-btn {
+.input-field form .primary-btn {
   padding: 1rem;
   border-radius: 8px;
   border: none;
@@ -265,20 +273,106 @@ nav .navbar-brand img {
   width: 10rem;
 }
 
-.input-field form .search-btn {
-  background-color: var(--primary-color);
+.input-field form .primary-btn {
   align-items: center;
-  color: var(--white-text-color);
   display: flex;
   justify-content: center;
   column-gap: 15px;
-  cursor: pointer;
+  color: var(--white-text-color);
 }
+
+
+/* ============Our Popular Tours============ */
+.popular-tours .container {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+.popular-tours .container .tours-information,
+.popular-tours .container .tours-images {
+  flex: 1;
+}
+
+.tours-information p {
+  margin: 25px 0px;
+}
+
+.tours-information ul {
+  margin-left: 20px;
+}
+
+.tours-information ul li {
+  margin: 10px 0px;
+  list-style: outside;
+  line-height: 2rem;
+}
+
+.tours-information .primary-btn {
+  padding: 14px 34px;
+}
+
+.tours-images img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
 
 /* ==============Responsive classes============== */
 /* Responsive: start 320px end: 1368px  */
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
+  section {
+    margin: 50px 0px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-size: 2.35rem;
+  }
+
+  h3 {
+    font-size: 1.85rem;
+  }
+
+  h4 {
+    font-size: 1.60rem;
+  }
+
+  h5 {
+    font-size: 1.35rem;
+  }
+
+  h6 {
+    font-size: 1.15rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .primary-btn {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
   nav .navbar-brand {
     font-size: 1.5rem;
     font-weight: 500;
@@ -314,17 +408,12 @@ nav .navbar-brand img {
   }
 
   .banner-content {
-    min-height: 650px;
+    min-height: 700px;
   }
 
   .banner-info {
     padding: 0;
-  }
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 3rem;
+    text-align: center;
   }
 
   .input-field form {
@@ -332,12 +421,57 @@ nav .navbar-brand img {
     row-gap: 20px;
   }
 
-  p {
-    font-size: 14px;
+  .popular-tours .container {
+    row-gap: 40px;
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
+  section {
+    margin: 50px 0px;
+  }
+
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.40rem;
+  }
+
+  h3 {
+    font-size: 1.90rem;
+  }
+
+  h4 {
+    font-size: 1.65rem;
+  }
+
+  h5 {
+    font-size: 1.40rem;
+  }
+
+  h6 {
+    font-size: 1.20rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .primary-btn {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
   nav .navbar-brand {
     font-size: 1.5rem;
     font-weight: 500;
@@ -373,17 +507,7 @@ nav .navbar-brand img {
   }
 
   .banner-info {
-    padding: 0;
-  }
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 3rem;
-  }
-
-  p {
-    font-size: 14px;
+    padding: 12px;
   }
 
   .input-field form {
@@ -392,20 +516,118 @@ nav .navbar-brand img {
     justify-content: center;
   }
 
+  .popular-tours .container {
+    row-gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+  section {
+    margin: 50px 0px;
+  }
+
+
   h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 3rem;
+    font-size: 2.9rem;
+  }
+
+  h2 {
+    font-size: 2.40rem;
+  }
+
+  h3 {
+    font-size: 1.90rem;
+  }
+
+  h4 {
+    font-size: 1.65rem;
+  }
+
+  h5 {
+    font-size: 1.40rem;
+  }
+
+  h6 {
+    font-size: 1.15rem;
   }
 
   p {
-    font-size: 14px;
+    font-size: 1rem;
+  }
+
+  .primary-btn {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .input-field form {
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .popular-tours .container {
+    row-gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  section {
+    margin: 50px 0px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.45rem;
+  }
+
+  h3 {
+    font-size: 1.95rem;
+  }
+
+  h4 {
+    font-size: 1.70rem;
+  }
+
+  h5 {
+    font-size: 1.45rem;
+  }
+
+  h6 {
+    font-size: 1.20rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .primary-btn {
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {}
