@@ -1,0 +1,411 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+section {
+  margin: 100px 0px;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
+.color-check {
+  color: #424247;
+}
+
+:root {
+  --primary-color: #ff5400;
+  --secondary-color: #424247;
+  --white-text-color: #fff;
+  --heder-text-black: #131318;
+}
+
+/* 100 – Thin.
+ 200 – Extra Light (Ultra Light)
+300 – Light.
+400 – Normal.
+500 – Medium.
+600 – Semi Bold (Demi Bold)
+700 – Bold.
+800 – Extra Bold (Ultra Bold) */
+
+
+h1 {
+  color: var(--white-text-color);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 5rem;
+}
+
+h2 {
+  color: var(--heder-text-black);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 3.125rem;
+}
+
+h3 {
+  color: var(--heder-text-black);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+
+
+
+h4 {
+  color: var(--white-text-color);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
+
+h5 {
+  color: var(--heder-text-black);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.875rem;
+}
+
+h6 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.5625rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+/* ===========header content=============  */
+header {
+  margin-top: 2.5rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav button {
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+nav button #check {
+  display: none;
+}
+
+nav button label.checkbtn {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  transition: 0.2s;
+
+}
+
+nav li:hover a {
+  color: var(--primary-color);
+}
+
+nav .brand {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+nav .navbar-brand {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.8125rem;
+  align-items: center;
+  display: flex;
+}
+
+nav .navbar-brand span {
+  color: var(--primary-color);
+}
+
+nav .navbar-brand img {
+  width: 3.5rem;
+  margin-right: 10px;
+}
+
+/* =========Banner section============= */
+.banner {
+  margin-top: -50px;
+}
+
+.banner-content {
+  background: url(../images/banner/banner.png);
+  width: 100%;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-content::before {
+  background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%);
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: 1rem;
+}
+
+
+.banner-info {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6.25rem;
+}
+
+.banner-info p {
+  text-align: center;
+  color: white;
+  margin: 1.5rem 0px;
+}
+
+.input-field {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+}
+
+.input-field form {
+  display: flex;
+  column-gap: 2rem;
+  flex: 1;
+}
+
+.input-field form input,
+.input-field form select,
+.input-field form .search-btn {
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #0000008a;
+  font-size: 1rem;
+  width: 10rem;
+}
+
+.input-field form .search-btn {
+  background-color: var(--primary-color);
+  align-items: center;
+  color: var(--white-text-color);
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  cursor: pointer;
+}
+
+/* ==============Responsive classes============== */
+/* Responsive: start 320px end: 1368px  */
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  nav .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  nav .navbar-brand img {
+    width: 3rem;
+    margin-right: 5px;
+  }
+
+  nav button {
+    right: 12px;
+  }
+
+  nav button label.checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    background: slategrey;
+    position: fixed;
+    padding: 30px 0px;
+    width: 100vw;
+    left: -100%;
+    flex-direction: column;
+    margin-top: 25px;
+    row-gap: 20px;
+    transition: 0.5s all;
+  }
+
+  #check:checked~nav ul {
+    left: 0%;
+  }
+
+  .banner-content {
+    min-height: 650px;
+  }
+
+  .banner-info {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+
+  .input-field form {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  nav .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  nav .navbar-brand img {
+    width: 3rem;
+    margin-right: 5px;
+  }
+
+  nav button {
+    right: 12px;
+  }
+
+  nav button label.checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    background: slategrey;
+    position: fixed;
+    padding: 30px 0px;
+    width: 100vw;
+    left: -100%;
+    flex-direction: column;
+    margin-top: 25px;
+    row-gap: 20px;
+    transition: 0.5s all;
+  }
+
+  #check:checked~nav ul {
+    left: 0%;
+  }
+
+  .banner-info {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .input-field form {
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {}

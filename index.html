@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call Up Travel</title>
+    <!-- fav icons -->
+    <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
-    <!-- fav icons -->
-    <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- header content -->
+    <!-- ======header content====== -->
     <header>
         <nav>
             <div class="container">
@@ -55,6 +55,60 @@
 
         <section></section>
     </header>
+
+    <main>
+        <!-- =======banner section======= -->
+        <section class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <div class="layout">
+                        <div class="banner-info">
+                            <h1>Explore Your Travel</h1>
+                            <p>it's an invitation to embark on a journey of discovery and adventure. With boundless
+                                opportunities awaiting, this phrase encapsulates the essence of wanderlust and
+                                curiosity. So pack your bags, open your mind, and let "Explore Your Travel" be your
+                                mantra as you set
+                                out to uncover the wonders that await around every corner.</p>
+                            <div class="input-field">
+                                <form action="#">
+                                    <input type="text" name="search" id="search" placeholder="where go">
+                                    <div class="when">
+                                        <select id="when">
+                                            <option value="when">when</option>
+                                            <option value="">7.00 Am</option>
+                                            <option value="">8.00 Am</option>
+                                            <option value="">9.00 Am</option>
+                                            <option value="">10.00 Am</option>
+                                            <option value="">11.00 Am</option>
+                                            <option value="">12.00 Am</option>
+                                            <option value="">1.00 Pm</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="select-type">
+                                        <select id="select-type">
+                                            <option value="goa">Select Type</option>
+                                            <option value="shimla">Shimla</option>
+                                            <option value="guwahati">Guwahati</option>
+                                            <option value="chembur">Chembur</option>
+                                            <option value="nainitaal">Nainitaal</option>
+                                        </select>
+                                    </div>
+                                    <button class="search-btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+
+    <!-- font awesome js -->
+    <script src="js/all.min.js"></script>
 </body>
 
 </html>
