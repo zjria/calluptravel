@@ -626,12 +626,12 @@ section.featured {
   row-gap: 24px;
 }
 
-.input-field form input,
-.input-field form .primary-btn {
+.newsletter .input-field form input,
+.newsletter .input-field form .primary-btn {
   width: 100%;
 }
 
-.input-field form input {
+.newsletter .input-field form input {
   border-radius: 8px;
   background: rgba(19, 19, 24, 0.05);
 }
@@ -664,7 +664,7 @@ section.featured {
 
 /* ===========footer=========== */
 footer {
-  margin: 100px 0px;
+  margin-top: 100px;
   padding: 110px 0px;
   background: rgba(19, 19, 24, 0.05);
   text-align: center;
@@ -943,7 +943,7 @@ footer {
   }
 
   footer {
-    margin: 50px 0px;
+    margin-top: 50px;
     padding: 50px 0px;
   }
 
@@ -1124,7 +1124,7 @@ footer {
   }
 
   footer {
-    margin: 50px 0px;
+    margin-top: 50px;
     padding: 50px 0px;
   }
 
@@ -1249,7 +1249,7 @@ footer {
   }
 
   footer {
-    margin: 50px 0px;
+    margin-top: 50px;
     padding: 50px 0px;
   }
 
