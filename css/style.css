@@ -317,11 +317,226 @@ nav .navbar-brand img {
   height: 100%;
 }
 
+/* ==========Choose Your Destination========== */
+.destination {
+  text-align: center;
+}
 
+.information-images p {
+  margin: 24px 0 48px 0;
+}
 
+.images-grides .row.first {
+  display: flex;
+  column-gap: 24px;
+  margin-bottom: 24px;
+}
 
+.images-grides .row.first .mal,
+.images-grides .row.first .indo,
+.images-grides .row.second .sril,
+.images-grides .row.second .north,
+.images-grides .row.second .kash,
+.images-grides .row.third .bang,
+.images-grides .row.third .band {
+  position: relative;
+}
 
+.images-grides .row.first .mal h4,
+.images-grides .row.first .indo h4,
+.images-grides .row.second .sril h4,
+.images-grides .row.second .north h4,
+.images-grides .row.second .kash h4,
+.images-grides .row.third .bang h4,
+.images-grides .row.third .band h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
 
+.images-grides .row.second {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 24px;
+  margin-bottom: 24px;
+}
+
+.images-grides .row.third {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* =============Why Choose Us============= */
+.choose-us {
+  text-align: center;
+}
+
+.choose-us>p {
+  margin: 24px 0 48px 0;
+}
+
+.choose-service .two-div {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0px;
+}
+
+.choose-service .one-div {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0px;
+  justify-content: center;
+}
+
+.choose-service .hotels,
+.choose-service .service,
+.choose-service .price {
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: start;
+}
+
+.choose-service .hotels {
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-service .service {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-service .price {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+  width: 50%;
+}
+
+.choose-service img {
+  width: 64px;
+  height: 64px;
+}
+
+.choose-service h5 {
+  margin: 32px 0px 16px 0px;
+}
+
+/* ===========Deals & Discounts=========== */
+.discounts {
+  text-align: center;
+}
+
+.discounts p {
+  margin: 24px 0 48px 0;
+}
+
+.tour-booking {
+  margin-bottom: 60px;
+}
+
+.discounts .first-packages {
+  background-image: url(../images/tour/1.png);
+  margin-bottom: 24px;
+}
+
+.discounts .second-packages {
+  background-image: url(../images/tour/2.png);
+  margin-bottom: 24px;
+}
+
+.discounts .third-packages {
+  background-image: url(../images/tour/1.png);
+  margin-bottom: 24px;
+}
+
+.discounts .first-packages,
+.discounts .second-packages,
+.discounts .third-packages {
+  width: 100%;
+  max-height: 800px;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  background-size: cover;
+  border: 2px solid red;
+}
+
+.discounts .second-packages {
+  justify-content: start;
+}
+
+.first-packages .tour-to-santorini,
+.second-packages .tour-to-scuba-diving,
+.third-packages .tour-to--the-lostatlantis {
+  box-sizing: border-box;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.8);
+  width: 55%;
+  padding: 40px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  margin: 55px;
+}
+
+.second-packages .tour-to-scuba-diving {
+  margin-left: 50px;
+}
+
+.discounts .time-member-place {
+  display: flex;
+  column-gap: 26px;
+}
+
+.discounts .time-member-place span {
+  margin-left: 8px;
+}
+
+.discounts p {
+  margin: 16px 0px;
+}
+
+.discounts .price {
+  margin: 16px 0px;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.discounts .primary-btn {
+  margin: 16px 0px;
+  width: 30%;
+  padding: 15px 0px;
+}
+
+.time-member-place .time,
+.time-member-place .member,
+.time-member-place .place {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.time-member-place .time .icon,
+.time-member-place .member .icon,
+.time-member-place .place .icon {
+  color: var(--primary-color);
+  width: 19.5px;
+  height: 19.5px;
+}
+
+.discounts .primary-btn.packages {
+  padding: 14px 22px;
+}
 
 
 
@@ -425,13 +640,77 @@ nav .navbar-brand img {
     row-gap: 40px;
     flex-direction: column;
   }
+
+  .images-grides img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .images-grides .row.first {
+    row-gap: 10px;
+    flex-direction: column;
+  }
+
+  .images-grides .row.first {
+    margin-bottom: 10px;
+  }
+
+  .images-grides .row.second {
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+    row-gap: 10px;
+  }
+
+  .images-grides .row.third {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .choose-service .two-div {
+    flex-direction: column;
+  }
+
+  .choose-service .price {
+    width: 100%;
+  }
+
+  .first-packages .tour-to-santorini,
+  .second-packages .tour-to-scuba-diving,
+  .third-packages .tour-to--the-lostatlantis {
+    min-width: 95%;
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .discounts .time-member-place {
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+
+  .time-member-place .time,
+  .time-member-place .member,
+  .time-member-place .place {
+    margin-bottom: 10px;
+  }
+
+  .discounts .primary-btn {
+    margin: 16px 0px;
+    width: 55%;
+    padding: 9px 0px;
+    margin: 0 auto;
+  }
+
+  .second-packages .tour-to-scuba-diving {
+    margin-left: 8px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
   section {
     margin: 50px 0px;
   }
-
 
   h1 {
     font-size: 2.5rem;
@@ -523,6 +802,44 @@ nav .navbar-brand img {
     text-align: center;
   }
 
+  .images-grides img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .images-grides .row.first {
+    row-gap: 10px;
+    flex-direction: column;
+  }
+
+  .images-grides .row.first {
+    margin-bottom: 10px;
+  }
+
+  .images-grides .row.second {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .images-grides .row.third {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .choose-service .two-div {
+    flex-direction: column;
+  }
+
+  .choose-service .price {
+    width: 100%;
+  }
+
+  .first-packages .tour-to-santorini,
+  .second-packages .tour-to-scuba-diving,
+  .third-packages .tour-to--the-lostatlantis {
+    padding: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -583,6 +900,33 @@ nav .navbar-brand img {
     flex-direction: column;
     text-align: center;
   }
+
+  .images-grides img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .images-grides .row.first {
+    column-gap: 10px;
+  }
+
+  .images-grides .row.first {
+    margin-bottom: 10px;
+    column-gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .images-grides .row.second {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .images-grides .row.row.third {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -627,6 +971,32 @@ nav .navbar-brand img {
     text-align: center;
     font-weight: 600;
     line-height: 20px;
+  }
+
+  .images-grides img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .images-grides .row.first {
+    column-gap: 10px;
+  }
+
+  .images-grides .row.first {
+    margin-bottom: 10px;
+    column-gap: 10px;
+    justify-content: space-around;
+  }
+
+  .images-grides .row.second {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .images-grides .row.row.third {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
   }
 }
 
